@@ -8,5 +8,5 @@ spec:
   ports:
   - port: 80
   selector:
-    app: webserver
+    app: webserver # Maps to labels in pod definition
   type: NodePort

@@ -5,8 +5,8 @@ metadata:
 spec:
   containers:
     - name: redis
-      image: redis:latest
-      imagePullPolicy: IfNotPresent
+      image: redis:latest # Should use specific sha instead
+      imagePullPolicy: IfNotPresent # This only pulls if not already pulled to prvent changing version
       ports:
         - containerPort: 6379
     
